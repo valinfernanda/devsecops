@@ -101,5 +101,6 @@ jobs:
         uses: aquasecurity/trivy-action@0.20.0
         with:
           image-ref: ${{ secrets.DOCKERHUB_USERNAME }}/notes-app:latest
+          vuln-type: os,library        # <--- tambahkan ini
           severity: HIGH,CRITICAL
           exit-code: 1
