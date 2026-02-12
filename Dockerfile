@@ -1,5 +1,5 @@
-# Gunakan Distroless Python 3.12 (minimal Debian packages)
-FROM gcr.io/distroless/python3:3.12
+# Gunakan Distroless Python 3.12 patch terbaru (minimal Debian packages)
+FROM gcr.io/distroless/python3:3.12.2
 
 # Set environment agar Python output langsung muncul di logs
 ENV PYTHONUNBUFFERED=1 \
